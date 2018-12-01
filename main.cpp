@@ -14,7 +14,8 @@ int hash(std::string&s,int&tablesize) {
 //        std::cout<<hashval<<std::endl;
         sum += hashval;
     }
-    sum=sum;
+    sum=std::signbit(sum)+s[0]+s[s.size()-1];
+    sum*=(sqrt(PI)*27)/(1.1111111111111111111111111111111111);
     sum%=tablesize;
     return sum;
 }

@@ -10,7 +10,7 @@ int hash(std::string & string, int & tableSize) {
     int sum = 0;
     int hashValue = 0;
     for (int i = 0; i < string.size(); i++) {
-        hashValue = (string[i]-'a') + 1;
+        hashValue = (string[i] - 'a') + 1;
         sum += hashValue;
     }
     sum = std::signbit(sum) + s[0] + s[s.size()-1];

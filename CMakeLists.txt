@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
-project(hashingandImprov)
+project(D-I-HashFunction)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(hashingandImprov main.cpp)
+add_executable(D-I-HashFunction main.cpp)

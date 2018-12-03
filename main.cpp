@@ -5,10 +5,12 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <cmath>
 
 int hash(std::string&s,int&tablesize) {
     int sum = 0;
     int hashval=0;
+    const double PI=3.1415;
     for (int i = 0; i < s.size(); i++) {
         hashval=(s[i]-'a')+1;
 //        std::cout<<hashval<<std::endl;
@@ -18,6 +20,10 @@ int hash(std::string&s,int&tablesize) {
     sum*=(sqrt(PI)*27)/(1.1111111111111111111111111111111111);
     sum%=tablesize;
     return sum;
+}
+void rehash(std::vector<std::list<std::pair<std::string,int>>> &vec){
+    std::vector<std::list<std::pair<std::string,int>>> newOne;
+
 }
 int main() {
     std::string n="act";

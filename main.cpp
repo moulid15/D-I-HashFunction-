@@ -18,6 +18,9 @@ int hash(std::string & string, int & tableSize) {
     sum %= tablesize;
     return sum;
 }
+void rehashing(){
+    
+}
 
 int main() {
     std::string n="act";

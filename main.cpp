@@ -29,7 +29,7 @@ int main() {
     std::string n="act";
     std::string b="bad";
     std::string g="arm";
-    int h=4;
+    int h=3;
     std::cout << hash(n,h) << std::endl;
     std::cout << hash(b,h) << std::endl;
     std::cout << hash(g,h) << std::endl;

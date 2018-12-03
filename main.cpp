@@ -5,26 +5,23 @@
 #include <string>
 #include <vector>
 #include <list>
-#include <cmath>
 
-int hash(std::string&s,int&tablesize) {
+int hash(std::string & string, int & tableSize) {
     int sum = 0;
-    int hashval=0;
-    const double PI=3.1415;
-    for (int i = 0; i < s.size(); i++) {
-        hashval=(s[i]-'a')+1;
-//        std::cout<<hashval<<std::endl;
-        sum += hashval;
+    int hashValue = 0;
+    for (int i = 0; i < string.size(); i++) {
+        hashValue = (string[i] - 'a') + 1;
+        sum += hashValue;
     }
-    sum=std::signbit(sum)+s[0]+s[s.size()-1];
-    sum*=(sqrt(PI)*27)/(1.1111111111111111111111111111111111);
-    sum%=tablesize;
+    sum = std::signbit(sum) + s[0] + s[s.size()-1];
+    sum *= (sqrt(PI) * 27) / (1.1111111111111111111111111111111111);
+    sum %= tablesize;
     return sum;
 }
-void rehash(std::vector<std::list<std::pair<std::string,int>>> &vec){
-    std::vector<std::list<std::pair<std::string,int>>> newOne;
-
+void rehashing(){
+    
 }
+
 int main() {
     std::string n="act";
     std::string b="bad";
@@ -41,7 +38,6 @@ int main() {
     std::cout << hash(e,h) << std::endl;
     std::cout << hash(f,h) << std::endl;
     std::cout << hash(g,h) << std::endl;
-
-
+    
     return 0;
 }

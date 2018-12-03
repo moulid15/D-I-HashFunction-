@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/D-I-HashFunction-.iml" filepath="$PROJECT_DIR$/.idea/D-I-HashFunction-.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/hashing11.iml" filepath="$PROJECT_DIR$/.idea/hashing11.iml" />
+>>>>>>> origin/master
     </modules>
   </component>
 </project>
